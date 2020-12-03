@@ -3,6 +3,7 @@
 ## General
 # Version
 timescaledb_pg_major: 12
+timescaledb_pg_port: 5432
 
 # Package
 timescaledb_deb_repo: "deb https://packagecloud.io/timescale/timescaledb/debian {{ ansible_distribution_release }} main"

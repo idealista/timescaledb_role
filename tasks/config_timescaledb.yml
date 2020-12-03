@@ -11,7 +11,7 @@
 - name: TIMESCALEDB | Prepare handlers
   command: /bin/true
   changed_when: true
-  notify: restart postgresql
+  notify: timescaledb pg restart
   when: extension_installed_check.failed or extension_installed_check.databases[ timescaledb_pg_database ].extensions['timescaledb'] is undefined
 
 - name: TIMESCALEDB | Flush handlers
@@ -29,4 +29,3 @@
     name: timescaledb
     db: "{{ timescaledb_pg_database }}"
     login_user: "{{ timescaledb_pg_user }}"
-
