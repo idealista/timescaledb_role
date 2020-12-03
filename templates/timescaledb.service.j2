@@ -1,0 +1,24 @@
+{{ ansible_managed | comment }}
+[Unit]
+Description=timescaledb
+Documentation={{ timescaledb_documentation_link }}
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+PrivateTmp={{ timescaledb_private_tmp }}
+User={{ timescaledb_user }}
+Group={{ timescaledb_group }}
+RuntimeDirectory=timescaledb
+LimitNOFILE={{ timescaledb_max_files }}
+
+ExecStart={{ timescaledb_bin_path }}/{{ timescaledb_exec_name }} {% for option in timescaledb_options %}{% if option %}-{{ option }} {% endif %}{% endfor %}
+
+StandardOutput={{ timescaledb_log_output }}
+StandardError={{ timescaledb_log_output }}
+ExecReload=/bin/kill -HUP $MAINPID
+KillSignal=SIGTERM
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

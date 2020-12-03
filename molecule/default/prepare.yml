@@ -1,0 +1,5 @@
+---
+- name: Prepare
+  hosts: timescaledb_group
+  roles:
+    - name: postgresql
