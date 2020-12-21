@@ -1,12 +1,12 @@
 ---
 
 ## Timescaledb Role
-timescaledb_user: "timescaledb_testuser"
 
 timescaledb_pg_major: 12
 timescaledb_pg_user: "postgres"
 timescaledb_pg_database: "timescaledb_db"
 
+timescaledb_pg_database_owner: "timescaledb_testuser"
 timescaledb_private_tmp: false
 
 # Postgresql Role
@@ -14,7 +14,7 @@ pg_user: "postgres"
 pg_major_release: "{{ timescaledb_pg_major }}"
 
 pg_users:
-  - name: "{{ timescaledb_user }}"
+  - name: "{{ timescaledb_pg_database_owner }}"
 pg_databases:
   - name: "{{ timescaledb_pg_database }}"
-    owner: "{{ timescaledb_user }}"
+    owner: "{{ timescaledb_pg_database_owner }}"
