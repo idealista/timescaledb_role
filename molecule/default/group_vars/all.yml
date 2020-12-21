@@ -10,7 +10,7 @@ timescaledb_pg_database: "timescaledb_db"
 timescaledb_private_tmp: false
 
 # Postgresql Role
-pg_user: "{{ timescaledb_pg_user }}"
+pg_user: "postgres"
 pg_major_release: "{{ timescaledb_pg_major }}"
 
 pg_users:

@@ -54,6 +54,8 @@ ansible-galaxy install -p roles -r requirements.yml -f
 Postgresql must already be installed on hosts.
 We highly recommend using this role in combination with [idealista.postgresql_role](https://github.com/idealista/postgresql_role), an example is provided in [molecule/default](/molecule/default) directory. (First install postgresql role then timescaledb role)
 
+`timescaledb_user` and `timescaledb_pg_database` variables should be set to an already configured posgtresql user and database.
+
 ```
 ---
 - hosts: someserver
