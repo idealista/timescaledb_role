@@ -1,5 +1,4 @@
 ---
-
 ## General
 
 # Version
@@ -15,7 +14,6 @@ timescaledb_private_tmp: true
 timescaledb_autotune: false
 
 # Posgtresql config
-timescaledb_user: "timescaledb"  # User owner of the postgresql database
 timescaledb_pg_user: "postgres"  # User running postgresql.
 timescaledb_pg_database: "timescaledb"  # Database in which to install timescaledb extension.
 timescaledb_pg_conf:
