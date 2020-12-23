@@ -15,10 +15,3 @@
     name: "{{ timescaledb_release_name }}"
     state: present
     update_cache: true
-
-- name: TIMESCALEDB | Ensure timescaledb user
-  user:
-    name: "{{ timescaledb_user }}"
-    system: yes
-    shell: /usr/sbin/nologin
-    createhome: no
