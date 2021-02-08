@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 
 ## [Unreleased](https://github.com/idealista/timescaledb_role/tree/develop)
 ### Changed
+*[#5](https://github.com/idealista/timescaledb_role/pull/5) Bump default timescaledb version to 2.0* @vicsufer
 ### Added
 ### Removed
 ### Fixed
