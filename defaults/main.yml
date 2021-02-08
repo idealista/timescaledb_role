@@ -8,7 +8,7 @@ timescaledb_pg_port: 5432
 # Package
 timescaledb_deb_repo: "deb https://packagecloud.io/timescale/timescaledb/debian {{ ansible_distribution_release }} main"
 timescaledb_deb_key: "https://packagecloud.io/timescale/timescaledb/gpgkey"
-timescaledb_release_name: "timescaledb-postgresql-{{ timescaledb_pg_major }}"
+timescaledb_release_name: "timescaledb-2-postgresql-{{ timescaledb_pg_major }}"
 
 timescaledb_private_tmp: true
 timescaledb_autotune: false
