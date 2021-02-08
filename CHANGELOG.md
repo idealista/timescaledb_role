@@ -8,7 +8,6 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 ### Added
 ### Removed
 ### Fixed
- *[#1](https://github.com/idealista/timescaledb_role/issues/1)`timescaledb_user` is undefined* @vicsufer
  *[#4](https://github.com/idealista/timescaledb_role/pull/4) Fix install task, use`impor_tasks` instead of `include_tasks`* @vicsufer
 
 ## [1.0.1](https://github.com/idealista/timescaledb_role/tree/1.0.1)
