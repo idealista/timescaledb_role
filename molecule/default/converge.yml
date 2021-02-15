@@ -1,5 +1,5 @@
 ---
 - name: Converge
-  hosts: timescaledb_group
+  hosts: timescaledb
   roles:
     - name: timescaledb_role

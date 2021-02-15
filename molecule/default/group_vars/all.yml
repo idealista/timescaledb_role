@@ -13,8 +13,22 @@ timescaledb_private_tmp: false
 pg_user: "postgres"
 pg_major_release: "{{ timescaledb_pg_major }}"
 
+pg_handler_on_config_change: "restart postgresql"
+pg_listen_addresses: "*"
+pg_hba_declarations:
+  - "host all all 0.0.0.0/0 trust"
+
 pg_users:
   - name: "{{ timescaledb_pg_database_owner }}"
 pg_databases:
   - name: "{{ timescaledb_pg_database }}"
     owner: "{{ timescaledb_pg_database_owner }}"
+
+pg_max_prepared_transactions: 150
+pg_enable_partitionwise_aggregate: on
+
+# Timescaledb multinode defaults
+timescaledb_multinode_enabled: true
+timescaledb_multinode_access_node: "timescaledb-an"
+timescaledb_multinode_data_nodes:
+  - timescaledb-dn
