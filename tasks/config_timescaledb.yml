@@ -37,7 +37,7 @@
     login_user: "{{ timescaledb_pg_user }}"
     db: "{{ timescaledb_pg_database }}"
     query: "SELECT add_data_node('{{ item }}', host => '{{ item }}');"
-    autocommit: true  # This query can't be run inside a transaction block 
+    autocommit: true  # This query can't be run inside a transaction block
     password: "{{ timescaledb_pg_user_password | default(omit) }}"
-  with_items: "{{ timescaledb_multinode_data_nodes}}"
+  with_items: "{{ timescaledb_multinode_data_nodes }}"
   when: timescaledb_multinode_enabled and ansible_hostname == timescaledb_multinode_access_node
