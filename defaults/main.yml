@@ -19,3 +19,8 @@ timescaledb_pg_database: "timescaledb"  # Database in which to install timescale
 timescaledb_pg_conf:
   - shared_preload_libraries: "'timescaledb'"
   - timescaledb.telemetry_level: "off"
+
+# Timescaledb multinode defaults
+timescaledb_multinode_enabled: false
+timescaledb_multinode_access_node: ""
+timescaledb_multinode_data_nodes: []
