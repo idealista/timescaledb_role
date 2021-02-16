@@ -25,5 +25,5 @@ timescaledb_multinode_enabled: false
 timescaledb_multinode_access_node: ""
 timescaledb_multinode_data_nodes: []
 
-## We use this variable to avoid fqdn/ptr resolution incompatibilities. See
+## We use this variable to avoid fqdn/ptr resolution incompatibilities.
 timescaledb_multinode_access_node_resolution_method: "{{ inventory_hostname }}" # ansible_hosntame, ansible_nodename, inventory_hostname, etc.
