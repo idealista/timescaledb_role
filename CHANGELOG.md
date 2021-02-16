@@ -9,7 +9,12 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
  *[#7](https://github.com/idealista/timescaledb_role/issue/7) Allow different node name resolution methods* @vicsufer
 ### Removed
 ### Fixed
- 
+
+## [1.2.0](https://github.com/idealista/timescaledb_role/tree/1.2.0)
+### [Full Changelog](https://github.com/idealista/timescaledb_role/compare/1.1.0...1.2.0)
+### Added
+ *[#7](https://github.com/idealista/timescaledb_role/issue/7) Allow to configure multinode deployments* @vicsufer
+
 ## [1.1.0](https://github.com/idealista/timescaledb_role/tree/1.1.0)
 ### [Full Changelog](https://github.com/idealista/timescaledb_role/compare/1.0.1...1.1.0)
 ### Changed
