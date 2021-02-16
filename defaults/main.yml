@@ -23,4 +23,6 @@ timescaledb_pg_conf:
 # Timescaledb multinode defaults
 timescaledb_multinode_enabled: false
 timescaledb_multinode_access_node: ""
+timescaledb_multinode_access_node_resolution_method: ansible_hostname  # ansible_hosntame, ansible_nodename, inventory_hostname, etc.
 timescaledb_multinode_data_nodes: []
+

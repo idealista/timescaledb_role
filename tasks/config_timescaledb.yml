@@ -33,4 +33,4 @@
 - name: TIMESCALEDB | Setup timescaledb data nodes
   include_tasks: config_data_node.yml
   with_items: "{{ timescaledb_multinode_data_nodes }}"
-  when: timescaledb_multinode_enabled and ansible_hostname == timescaledb_multinode_access_node
+  when: timescaledb_multinode_enabled and "{{ timescaledb_multinode_access_node_resolution_method }}" == timescaledb_multinode_access_node
