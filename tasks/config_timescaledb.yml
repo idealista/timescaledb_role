@@ -1,5 +1,5 @@
 ---
-- name: TIMESCALEDB | Check if extension is already isntalled.
+- name: TIMESCALEDB | Check if extension is already installed.
   become: yes
   become_user: postgres
   postgresql_info:
@@ -29,3 +29,8 @@
     name: timescaledb
     db: "{{ timescaledb_pg_database }}"
     login_user: "{{ timescaledb_pg_user }}"
+
+- name: TIMESCALEDB | Setup timescaledb data nodes
+  include_tasks: config_data_node.yml
+  with_items: "{{ timescaledb_multinode_data_nodes }}"
+  when: timescaledb_multinode_enabled and ansible_hostname == timescaledb_multinode_access_node
