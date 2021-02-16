@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 ## [Unreleased](https://github.com/idealista/timescaledb_role/tree/develop)
 ### Changed
 ### Added
+ *[#7](https://github.com/idealista/timescaledb_role/issue/7) Allow different node name resolution methods* @vicsufer
 ### Removed
 ### Fixed
 
