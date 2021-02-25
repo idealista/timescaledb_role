@@ -2,13 +2,15 @@
 ## General
 
 # Version
+timescaledb_version: "2-2.1.0"
 timescaledb_pg_major: 12
 timescaledb_pg_port: 5432
 
 # Package
+## Available versions https://packagecloud.io/timescale/timescaledb
 timescaledb_deb_repo: "deb https://packagecloud.io/timescale/timescaledb/debian {{ ansible_distribution_release }} main"
 timescaledb_deb_key: "https://packagecloud.io/timescale/timescaledb/gpgkey"
-timescaledb_release_name: "timescaledb-2-postgresql-{{ timescaledb_pg_major }}"
+timescaledb_release_name: "timescaledb-{{ timescaledb_version }}-postgresql-{{ timescaledb_pg_major }}"
 
 timescaledb_private_tmp: true
 timescaledb_autotune: false
