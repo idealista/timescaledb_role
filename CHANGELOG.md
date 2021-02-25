@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 
 ## [Unreleased](https://github.com/idealista/timescaledb_role/tree/develop)
 ### Changed
+*[#12](https://github.com/idealista/timescaledb_role/issue/12) Fix timescaledb package names* @vicsufer
 ### Added
 ### Removed
 ### Fixed
