@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 ## [Unreleased](https://github.com/idealista/timescaledb_role/tree/develop)
 ### Changed
 ### Added
+*[#14](https://github.com/idealista/timescaledb_role/issues/14) [FEATURE] Parametrize timescaledb extension version* @emepege
+
 ### Removed
 ### Fixed
 
