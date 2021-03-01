@@ -29,6 +29,7 @@
     name: timescaledb
     db: "{{ timescaledb_pg_database }}"
     login_user: "{{ timescaledb_pg_user }}"
+    version: "{{ timescaledb_pg_extension_version | default(omit) }}"
 
 - name: TIMESCALEDB | Setup timescaledb data nodes
   include_tasks: config_data_node.yml
