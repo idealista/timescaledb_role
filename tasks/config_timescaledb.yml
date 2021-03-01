@@ -35,3 +35,7 @@
   include_tasks: config_data_node.yml
   with_items: "{{ timescaledb_multinode_data_nodes }}"
   when: timescaledb_multinode_enabled and timescaledb_multinode_access_node_resolution_method == timescaledb_multinode_access_node
+
+- name: TIMESCALEDB | Setup timescaledb multinode password authentication
+  include_tasks: config_password_authentication.yml
+  when: timescaledb_multinode_enabled and timescaledb_multinode_password_authentication_enabled and timescaledb_multinode_access_node_resolution_method == timescaledb_multinode_access_node

@@ -7,3 +7,11 @@ command:
     - "/timescaledb-dn/"
     timeout: 10000
     skip: false
+
+file:
+  /var/lib/postgresql/.pgpass:
+    exists: true
+  /etc/postgresql/12/main/postgresql.conf:
+    exists: true
+    contains: 
+      - "timescaledb.passfile = '/var/lib/postgresql/.pgpass'"
