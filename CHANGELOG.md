@@ -9,6 +9,11 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 ### Removed
 ### Fixed
 
+## [1.3.0](https://github.com/idealista/timescaledb_role/tree/1.3.0)
+### [Full Changelog](https://github.com/idealista/timescaledb_role/compare/1.2.2...1.3.0)
+### Added
+*[#16](https://github.com/idealista/timescaledb_role/issues/16) [FEATURE] Add password authentication configuration in multi-node installation* @emepege
+
 ## [1.2.2](https://github.com/idealista/timescaledb_role/tree/1.2.2)
 ### [Full Changelog](https://github.com/idealista/timescaledb_role/compare/1.2.1...1.2.2)
 ### Fixed

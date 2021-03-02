@@ -3,10 +3,10 @@
 ## Timescaledb Role
 
 timescaledb_pg_major: 12
-timescaledb_pg_user: "postgres"
 timescaledb_pg_database: "timescaledb_db"
 
 timescaledb_pg_database_owner: "timescaledb_testuser"
+timescaledb_pg_database_owner_password: "supersecure"
 timescaledb_private_tmp: false
 
 # Postgresql Role
@@ -20,6 +20,7 @@ pg_hba_declarations:
 
 pg_users:
   - name: "{{ timescaledb_pg_database_owner }}"
+    password: "{{ timescaledb_pg_database_owner_password }}"
 pg_databases:
   - name: "{{ timescaledb_pg_database }}"
     owner: "{{ timescaledb_pg_database_owner }}"
@@ -32,3 +33,4 @@ timescaledb_multinode_enabled: true
 timescaledb_multinode_access_node: "timescaledb-an"
 timescaledb_multinode_data_nodes:
   - timescaledb-dn
+timescaledb_multinode_password_authentication_enabled: true
