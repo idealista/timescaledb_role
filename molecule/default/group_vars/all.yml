@@ -3,8 +3,6 @@
 ## Timescaledb Role
 
 timescaledb_pg_major: 12
-timescaledb_pg_user: "postgres"
-timescaledb_pg_group: "postgres"
 timescaledb_pg_database: "timescaledb_db"
 
 timescaledb_pg_database_owner: "timescaledb_testuser"
