@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 
 ## [Unreleased](https://github.com/idealista/timescaledb_role/tree/develop)
 ### Changed
+*[#19](https://github.com/idealista/timescaledb_role/issues/19) [REFACTOR] Changes in password authentication configuration* @emepege
 ### Added
 ### Removed
 ### Fixed

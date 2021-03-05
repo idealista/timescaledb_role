@@ -23,6 +23,7 @@ timescaledb_pg_database: "timescaledb"  # Database in which to install timescale
 timescaledb_pg_conf:
   - shared_preload_libraries: "'timescaledb'"
   - timescaledb.telemetry_level: "off"
+#  - timescaledb.passfile: "'{{ timescaledb_multinode_pgpass_path }}/.pgpass'" # Mandatory if you want to enable password authentication in a multi-node installation
 
 # Timescaledb multinode defaults
 timescaledb_multinode_enabled: false
